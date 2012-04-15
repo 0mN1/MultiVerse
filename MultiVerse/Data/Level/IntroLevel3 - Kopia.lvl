@@ -1,0 +1,34 @@
+@LevelObjects
+setBgColor 0 5 10
+setGravity 9.82
+addImage iGr1 Data/Image/CityLvl/Ground/Gr_01.png
+addImage iGr2 Data/Image/CityLvl/Ground/Gr_02.png
+addImage iGr3 Data/Image/CityLvl/Ground/Gr_03.png
+addImage iBuild1 Data/Image/CityLvl/CityPt2/City_0005_Building.png
+addImage iBuildPiece1 Data/Image/CityLvl/CityPt2/City_0000_broke.png
+addSound RoadBlockCol Data/Sound/FraundleRoadBlockCol.wav
+addMusicTrack FraundleMusic01 Data/Music/FraundleMusic.ogg
+addMusicRequest Music<-FraundleMusic01 1 0
+addSolid Gr1 Image<-iGr1 -1422 650
+addSolid Gr2 Image<-iGr2 1911.5 650
+addSolid BuildPiece1Col Image<-iBuildPiece1 -2514 -10000
+addArtifact Build1 Image<-iBuild1 -969.491 42.2603 -0.5 1.1
+addArtifact BuildPiece1 Image<-iBuildPiece1 -2514 -10000 -5 1
+addSpawnPoint -732.671 314.871
+addActionBox 1 -1835 100 -1620 457
+addActionBox 2 -3074 457 -1981 682
+addActionBox 3 -2974 413 -2053 490
+
+@Script
+addBoolean RoadBlockActive 0
+addBoolean RoadBlockDone 0
+addBoolean FirstContactMade 0
+onStart Solid<-BuildPiece1Col<-yPosition = -5000
+onStart Artifact<-BuildPiece1<-yPosition = -5000
+everyFrame if !Boolean<-RoadBlockActive && ABCollision Player<-Mask ActionBox<-1 : Artifact<-BuildPiece1<-yMomentum = 2200 Artifact<-BuildPiece1<-yPosition = -930 Boolean<-RoadBlockActive = 1
+everyFrame if Boolean<-RoadBlockActive && !Boolean<-RoadBlockDone : Function<-RoadBlockF
+
+addFunction RoadBlockF
+	if !Boolean<-FirstContactMade && ABCollision Artifact<-BuildPiece1 ActionBox<-3 : Artifact<-BuildPiece1<-rotMomentum = 250 PlaySound Sound<-RoadBlockCol Boolean<-FirstContactMade = 1
+	if ABCollision Artifact<-BuildPiece1 ActionBox<-2 : Artifact<-BuildPiece1<-yMomentum = 0 Artifact<-BuildPiece1<-rotMomentum = 0 Artifact<-BuildPiece1<-yPosition = -5000 Solid<-BuildPiece1Col<-yPosition = 96 Boolean<-RoadBlockDone = 1
+endFunction

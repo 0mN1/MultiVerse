@@ -1,0 +1,9 @@
+SoundTrack Data/VoiceTrack/57.ogg
+Subtitles
+Hello!|2.5
+I am your brother!|1
+How are you?|0.5
+Who are you?|1.2
+I like candy!|n
+Give me candy!|3
+Are you my mother?|END

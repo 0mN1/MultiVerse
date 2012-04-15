@@ -1,0 +1,39 @@
+NewAnimation
+
+    NewFrame
+
+        CenterRHand -3.97735 26.8343 CenterRForearm 5.99874 -46.169 CenterRUpperarm 5.63926 -94.2613 CenterRFoot -3.1481 136.361 CenterRKnee -29.5233 61.8674
+        CenterRHip 0.142766 3.99745 CenterLHand -1.8345 25.9874 CenterLForearm 11.8085 -46.4202 CenterLUpperarm 7.63799 -94.3327 CenterLFoot 16.5546 147.258
+        CenterLKnee 8.95379 68.599 CenterLHip 2.14149 3.92607 PointHead -4 -188 CenterHead -4 -112 CenterBody 0 0
+        Duration 0.3
+
+    EndFrame
+
+    NewFrame
+
+        CenterRHand 11.0304 26.7456 CenterRForearm 20.8092 -46.2843 CenterRUpperarm 12.3197 -93.6228 CenterRFoot -8.15742 97.0867 CenterRKnee -57.2287 35.1431
+        CenterRHip -0.141505 3.9975 CenterLHand 14.5239 20.4459 CenterLForearm 35.261 -50.2575 CenterLUpperarm 14.3185 -93.552 CenterLFoot 31.3424 144.95
+        CenterLKnee 12.2744 68.2592 CenterLHip 1.85724 4.06825 PointHead -0.913811 -187.845 CenterHead 3.96467 -112.001 CenterBody 0 0
+        Duration 0.3
+
+    EndFrame
+
+    NewFrame
+
+        CenterRHand 44.7089 18.8737 CenterRForearm 46.6546 -54.7823 CenterRUpperarm 17.2512 -92.8407 CenterRFoot -48.3552 135.464 CenterRKnee -37.8082 57.1453
+        CenterRHip -0.352605 3.98443 CenterLHand 46.9935 13.12 CenterLForearm 54.6889 -60.1588 CenterLUpperarm 19.2434 -92.6644 CenterLFoot 67.3273 121.206
+        CenterLKnee 8.11833 68.868 CenterLHip 1.63961 4.16073 PointHead -4.06441 -186.345 CenterHead 9.87923 -111.635 CenterBody 0 0
+        Duration 0.3
+
+    EndFrame
+
+    NewFrame
+
+        CenterRHand 64.8986 2.40975 CenterRForearm 48.5482 -69.435 CenterRUpperarm 7.2897 -94.1481 CenterRFoot -27.2527 144.597 CenterRKnee -19.7795 65.9258
+        CenterRHip 0.0727154 3.99934 CenterLHand 65.1274 -5.45052 CenterLForearm 54.7166 -78.3931 CenterLUpperarm 9.28937 -94.1844 CenterLFoot 69.9113 107.792
+        CenterLKnee 1.06999 68.986 CenterLHip 2.07239 3.96298 PointHead -10.174 -187.616 CenterHead -2.03733 -112.053 CenterBody 0 0
+        Duration 0.3
+
+    EndFrame
+
+EndAnimation

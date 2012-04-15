@@ -1,0 +1,494 @@
+# depslib dependency file v1.0
+1295363870 source:r:\multiverse\main.cpp
+	"GameHandler.hpp"
+
+1295038410 r:\multiverse\sfmlfunctions.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Network.hpp>
+	<cmath>
+	<string>
+	<iostream>
+	<fstream>
+	"std_string-functions.hpp"
+
+1261876548 r:\multiverse\std_string-functions.hpp
+	<cstdlib>
+	<string>
+	<sstream>
+	<algorithm>
+
+1276690194 r:\multiverse\list.hpp
+	<cstdlib>
+
+1294789706 r:\multiverse\gui.hpp
+	"SFMLfunctions.hpp"
+
+1290073420 r:\multiverse\animation.hpp
+	"SFMLFunctions.hpp"
+
+1277307150 r:\multiverse\buttons.hpp
+	"SFMLfunctions.hpp"
+	<string>
+
+1295816828 r:\multiverse\player.hpp
+	"LevelObjects.hpp"
+	"LevelBackground.hpp"
+	"LevelScript.hpp"
+	"Skeleton.hpp"
+
+1277500186 r:\multiverse\levelobjects.hpp
+
+1278629456 r:\multiverse\levelbackground.hpp
+	"List.hpp"
+
+1295363870 source:f:\multiverse\main.cpp
+	"GameHandler.hpp"
+
+1295038410 f:\multiverse\sfmlfunctions.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Network.hpp>
+	<cmath>
+	<string>
+	<iostream>
+	<fstream>
+	"std_string-functions.hpp"
+
+1261876548 f:\multiverse\std_string-functions.hpp
+	<cstdlib>
+	<string>
+	<sstream>
+	<algorithm>
+
+1276690194 f:\multiverse\list.hpp
+	<cstdlib>
+
+1294789706 f:\multiverse\gui.hpp
+	"SFMLfunctions.hpp"
+
+1290073420 f:\multiverse\animation.hpp
+	"SFMLFunctions.hpp"
+
+1277307150 f:\multiverse\buttons.hpp
+	"SFMLfunctions.hpp"
+	<string>
+
+1295364228 f:\multiverse\player.hpp
+	"LevelObjects.hpp"
+	"LevelBackground.hpp"
+	"LevelScript.hpp"
+	"Skeleton.hpp"
+
+1277500186 f:\multiverse\levelobjects.hpp
+
+1278629456 f:\multiverse\levelbackground.hpp
+	"List.hpp"
+
+1295550822 r:\multiverse\gamehandler.hpp
+	<iostream>
+	<windows.h>
+	"SFMLfunctions.hpp"
+	"List.hpp"
+	"GUI.hpp"
+	"Animation.hpp"
+	"Buttons.hpp"
+	"Player.hpp"
+	"LevelObjects.hpp"
+	"LevelBackground.hpp"
+	"LevelScript.hpp"
+
+1295363968 f:\multiverse\gamehandler.hpp
+	<iostream>
+	<windows.h>
+	"SFMLfunctions.hpp"
+	"List.hpp"
+	"GUI.hpp"
+	"Animation.hpp"
+	"Buttons.hpp"
+	"Player.hpp"
+	"LevelObjects.hpp"
+	"LevelBackground.hpp"
+	"LevelScript.hpp"
+
+1295022856 f:\multiverse\levelscript.hpp
+	"List.hpp"
+	"Animation.hpp"
+
+1295022856 r:\multiverse\levelscript.hpp
+	"List.hpp"
+	"Animation.hpp"
+
+1295037878 r:\multiverse\skeleton.hpp
+	"SFMLfunctions.hpp"
+	"List.hpp"
+
+1295037878 f:\multiverse\skeleton.hpp
+	"SFMLfunctions.hpp"
+	"List.hpp"
+
+1295363870 source:g:\multiverse\main.cpp
+	"GameHandler.hpp"
+
+1295550822 g:\multiverse\gamehandler.hpp
+	<iostream>
+	<windows.h>
+	"SFMLfunctions.hpp"
+	"List.hpp"
+	"GUI.hpp"
+	"Animation.hpp"
+	"Buttons.hpp"
+	"Player.hpp"
+	"LevelObjects.hpp"
+	"LevelBackground.hpp"
+	"LevelScript.hpp"
+
+1295038410 g:\multiverse\sfmlfunctions.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Network.hpp>
+	<cmath>
+	<string>
+	<iostream>
+	<fstream>
+	"std_string-functions.hpp"
+
+1261876548 g:\multiverse\std_string-functions.hpp
+	<cstdlib>
+	<string>
+	<sstream>
+	<algorithm>
+
+1276690194 g:\multiverse\list.hpp
+	<cstdlib>
+
+1294789706 g:\multiverse\gui.hpp
+	"SFMLfunctions.hpp"
+
+1290073420 g:\multiverse\animation.hpp
+	"SFMLFunctions.hpp"
+
+1277307150 g:\multiverse\buttons.hpp
+	"SFMLfunctions.hpp"
+	<string>
+
+1296201598 g:\multiverse\player.hpp
+	"LevelObjects.hpp"
+	"LevelBackground.hpp"
+	"LevelScript.hpp"
+	"Skeleton.hpp"
+
+1277500186 g:\multiverse\levelobjects.hpp
+
+1278629456 g:\multiverse\levelbackground.hpp
+	"List.hpp"
+
+1295022856 g:\multiverse\levelscript.hpp
+	"List.hpp"
+	"Animation.hpp"
+
+1295037878 g:\multiverse\skeleton.hpp
+	"SFMLfunctions.hpp"
+	"List.hpp"
+
+1327880700 source:f:\multiverse latest\main.cpp
+	"GameHandler.hpp"
+
+1331291346 f:\multiverse latest\gamehandler.hpp
+	<iostream>
+	<windows.h>
+	"SFMLfunctions.hpp"
+	"List.hpp"
+	"GUI.hpp"
+	"Animation.hpp"
+	"Buttons.hpp"
+	"Player.hpp"
+	"ArtificialIntelligence.hpp"
+	"LevelScript.hpp"
+
+1329488650 f:\multiverse latest\sfmlfunctions.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Network.hpp>
+	<cmath>
+	<string>
+	<iostream>
+	<fstream>
+	"std_string-functions.hpp"
+
+1261880148 f:\multiverse latest\std_string-functions.hpp
+	<cstdlib>
+	<string>
+	<sstream>
+	<algorithm>
+
+1276693794 f:\multiverse latest\list.hpp
+	<cstdlib>
+
+1327803520 f:\multiverse latest\gui.hpp
+	"SFMLfunctions.hpp"
+
+1290077020 f:\multiverse latest\animation.hpp
+	"SFMLFunctions.hpp"
+
+1277310750 f:\multiverse latest\buttons.hpp
+	"SFMLfunctions.hpp"
+	<string>
+
+1327881886 f:\multiverse latest\player.hpp
+	"LevelObjects.hpp"
+	"LevelBackground.hpp"
+	"LevelScript.hpp"
+	"Skeleton.hpp"
+	"AnimationSystem.hpp"
+
+1277503786 f:\multiverse latest\levelobjects.hpp
+
+1278633056 f:\multiverse latest\levelbackground.hpp
+	"List.hpp"
+
+1327880778 f:\multiverse latest\levelscript.hpp
+	"SFMLfunctions.hpp"
+	"List.hpp"
+	"Animation.hpp"
+	"ArtificialIntelligence.hpp"
+	"TellTaleSystem.hpp"
+	<dirent.h>
+
+1329567778 f:\multiverse latest\skeleton.hpp
+	"SFMLfunctions.hpp"
+	"List.hpp"
+
+1327880700 source:g:\multiverse latest\main.cpp
+	"GameHandler.hpp"
+
+1331291346 g:\multiverse latest\gamehandler.hpp
+	<iostream>
+	<windows.h>
+	"SFMLfunctions.hpp"
+	"List.hpp"
+	"GUI.hpp"
+	"Animation.hpp"
+	"Buttons.hpp"
+	"Player.hpp"
+	"ArtificialIntelligence.hpp"
+	"LevelScript.hpp"
+
+1329488650 g:\multiverse latest\sfmlfunctions.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Network.hpp>
+	<cmath>
+	<string>
+	<iostream>
+	<fstream>
+	"std_string-functions.hpp"
+
+1261880148 g:\multiverse latest\std_string-functions.hpp
+	<cstdlib>
+	<string>
+	<sstream>
+	<algorithm>
+
+1276693794 g:\multiverse latest\list.hpp
+	<cstdlib>
+
+1327803520 g:\multiverse latest\gui.hpp
+	"SFMLfunctions.hpp"
+
+1290077020 g:\multiverse latest\animation.hpp
+	"SFMLFunctions.hpp"
+
+1277310750 g:\multiverse latest\buttons.hpp
+	"SFMLfunctions.hpp"
+	<string>
+
+1327881886 g:\multiverse latest\player.hpp
+	"LevelObjects.hpp"
+	"LevelBackground.hpp"
+	"LevelScript.hpp"
+	"Skeleton.hpp"
+	"AnimationSystem.hpp"
+
+1277503786 g:\multiverse latest\levelobjects.hpp
+
+1278633056 g:\multiverse latest\levelbackground.hpp
+	"List.hpp"
+
+1327880778 g:\multiverse latest\levelscript.hpp
+	"SFMLfunctions.hpp"
+	"List.hpp"
+	"Animation.hpp"
+	"ArtificialIntelligence.hpp"
+	"TellTaleSystem.hpp"
+	<dirent.h>
+
+1329567778 g:\multiverse latest\skeleton.hpp
+	"SFMLfunctions.hpp"
+	"List.hpp"
+
+1327880700 source:m:\multiverse latest\main.cpp
+	"GameHandler.hpp"
+
+1327881610 m:\multiverse latest\gamehandler.hpp
+	<iostream>
+	<windows.h>
+	"SFMLfunctions.hpp"
+	"List.hpp"
+	"GUI.hpp"
+	"Animation.hpp"
+	"Buttons.hpp"
+	"Player.hpp"
+	"ArtificialIntelligence.hpp"
+	"LevelScript.hpp"
+
+1319408954 m:\multiverse latest\sfmlfunctions.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Network.hpp>
+	<cmath>
+	<string>
+	<iostream>
+	<fstream>
+	"std_string-functions.hpp"
+
+1261880148 m:\multiverse latest\std_string-functions.hpp
+	<cstdlib>
+	<string>
+	<sstream>
+	<algorithm>
+
+1276693794 m:\multiverse latest\list.hpp
+	<cstdlib>
+
+1327803520 m:\multiverse latest\gui.hpp
+	"SFMLfunctions.hpp"
+
+1290077020 m:\multiverse latest\animation.hpp
+	"SFMLFunctions.hpp"
+
+1277310750 m:\multiverse latest\buttons.hpp
+	"SFMLfunctions.hpp"
+	<string>
+
+1327881886 m:\multiverse latest\player.hpp
+	"LevelObjects.hpp"
+	"LevelBackground.hpp"
+	"LevelScript.hpp"
+	"Skeleton.hpp"
+	"AnimationSystem.hpp"
+
+1277503786 m:\multiverse latest\levelobjects.hpp
+
+1278633056 m:\multiverse latest\levelbackground.hpp
+	"List.hpp"
+
+1327880778 m:\multiverse latest\levelscript.hpp
+	"SFMLfunctions.hpp"
+	"List.hpp"
+	"Animation.hpp"
+	"ArtificialIntelligence.hpp"
+	"TellTaleSystem.hpp"
+	<dirent.h>
+
+1327797722 m:\multiverse latest\skeleton.hpp
+	"SFMLfunctions.hpp"
+	"List.hpp"
+
+1309982350 source:l:\multiverse latest\main.cpp
+	"GameHandler.hpp"
+
+1319665866 l:\multiverse latest\gamehandler.hpp
+	<iostream>
+	<windows.h>
+	"SFMLfunctions.hpp"
+	"List.hpp"
+	"GUI.hpp"
+	"Animation.hpp"
+	"Buttons.hpp"
+	"Player.hpp"
+	"LevelScript.hpp"
+
+1319408954 l:\multiverse latest\sfmlfunctions.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Network.hpp>
+	<cmath>
+	<string>
+	<iostream>
+	<fstream>
+	"std_string-functions.hpp"
+
+1261880148 l:\multiverse latest\std_string-functions.hpp
+	<cstdlib>
+	<string>
+	<sstream>
+	<algorithm>
+
+1276693794 l:\multiverse latest\list.hpp
+	<cstdlib>
+
+1319405386 l:\multiverse latest\gui.hpp
+	"SFMLfunctions.hpp"
+
+1290077020 l:\multiverse latest\animation.hpp
+	"SFMLFunctions.hpp"
+
+1277310750 l:\multiverse latest\buttons.hpp
+	"SFMLfunctions.hpp"
+	<string>
+
+1319782636 l:\multiverse latest\player.hpp
+	"LevelObjects.hpp"
+	"LevelBackground.hpp"
+	"LevelScript.hpp"
+	"Skeleton.hpp"
+
+1277503786 l:\multiverse latest\levelobjects.hpp
+
+1278633056 l:\multiverse latest\levelbackground.hpp
+	"List.hpp"
+
+1319665076 l:\multiverse latest\levelscript.hpp
+	"List.hpp"
+	"Animation.hpp"
+
+1319782316 l:\multiverse latest\skeleton.hpp
+	"SFMLfunctions.hpp"
+	"List.hpp"
+
+1319660136 source:m:\multiverse latest\resource.rc
+
+1319660136 source:f:\multiverse latest\resource.rc
+
+1319660136 source:l:\multiverse latest\resource.rc
+
+1320709876 m:\multiverse latest\artificialintelligence.hpp
+	"AnimationSystem.hpp"
+
+1321229198 m:\multiverse latest\animationsystem.hpp
+	"Skeleton.hpp"
+
+1320709876 f:\multiverse latest\artificialintelligence.hpp
+	"AnimationSystem.hpp"
+
+1321229198 f:\multiverse latest\animationsystem.hpp
+	"Skeleton.hpp"
+
+1319660136 source:g:\multiverse latest\resource.rc
+
+1320709876 g:\multiverse latest\artificialintelligence.hpp
+	"AnimationSystem.hpp"
+
+1321229198 g:\multiverse latest\animationsystem.hpp
+	"Skeleton.hpp"
+
+1330440172 f:\multiverse latest\telltalesystem.hpp
+	"Skeleton.hpp"
+
+1327880582 m:\multiverse latest\telltalesystem.hpp
+	"Skeleton.hpp"
+
+1330440172 g:\multiverse latest\telltalesystem.hpp
+	"Skeleton.hpp"
+

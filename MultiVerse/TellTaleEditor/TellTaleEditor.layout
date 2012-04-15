@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="..\GUI.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="13145" topLine="336" />
+	</File>
+	<File name="..\LevelScript.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="25727" topLine="328" />
+	</File>
+	<File name="..\SFMLfunctions.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="4608" topLine="55" />
+	</File>
+	<File name="..\Skeleton.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="12208" topLine="120" />
+	</File>
+	<File name="Main.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="1680" topLine="12" />
+	</File>
+	<File name="..\TellTaleSystem.hpp" open="1" top="0" tabpos="2">
+		<Cursor position="52170" topLine="0" />
+	</File>
+	<File name="..\TellTaleSystemUpdate.hpp" open="1" top="0" tabpos="3">
+		<Cursor position="1901" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

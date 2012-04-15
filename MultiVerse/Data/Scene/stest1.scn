@@ -1,0 +1,14 @@
+Name stest1
+Lvl 
+Type S
+Dur 30
+Fcop 1
+Lpii 1
+PChar PLAYER 0 KingOfLimbs
+	Pos 601 265 0
+	Dir 0 0
+endChar
+Char Kim 0 Kim
+	Pos 434 264 0
+	Dir 1 0
+endChar

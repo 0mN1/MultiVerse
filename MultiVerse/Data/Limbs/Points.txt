@@ -1,0 +1,12 @@
+ForearmLeft 8 10
+ForearmRight 8 13
+Head 9 25
+KneeLeft 6 12
+KneeRight 6 12
+ThighLeft 10 14
+ThighRight 10 14
+UpperarmLeft 8 9
+UpperarmRight 8 11
+FootLeft 5 6
+FootRight 5 6
+Body 47 32

@@ -1,0 +1,95 @@
+# depslib dependency file v1.0
+1294153996 source:f:\multiverse\skeletonanimator source\main.cpp
+	"SFMLfunctions.hpp"
+	"GUI.hpp"
+	"List.hpp"
+	"Skeleton.hpp"
+
+1292286520 f:\multiverse\skeletonanimator source\sfmlfunctions.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<cmath>
+	<string>
+	<iostream>
+	<fstream>
+	"std_string-functions.hpp"
+
+1261876548 f:\multiverse\skeletonanimator source\std_string-functions.hpp
+	<cstdlib>
+	<string>
+	<sstream>
+	<algorithm>
+
+1294085476 f:\multiverse\skeletonanimator source\gui.hpp
+	"SFMLfunctions.hpp"
+
+1276690194 f:\multiverse\skeletonanimator source\list.hpp
+	<cstdlib>
+
+1294159146 f:\multiverse\skeletonanimator source\skeleton.hpp
+	"SFMLfunctions.hpp"
+	"List.hpp"
+
+1292579072 source:g:\multiverse\skeletonanimator source\main.cpp
+	"SFMLfunctions.hpp"
+	"GUI.hpp"
+	"List.hpp"
+	"Skeleton.hpp"
+
+1292286520 g:\multiverse\skeletonanimator source\sfmlfunctions.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<cmath>
+	<string>
+	<iostream>
+	<fstream>
+	"std_string-functions.hpp"
+
+1261876548 g:\multiverse\skeletonanimator source\std_string-functions.hpp
+	<cstdlib>
+	<string>
+	<sstream>
+	<algorithm>
+
+1292574296 g:\multiverse\skeletonanimator source\gui.hpp
+	"SFMLfunctions.hpp"
+
+1276690194 g:\multiverse\skeletonanimator source\list.hpp
+	<cstdlib>
+
+1292580454 g:\multiverse\skeletonanimator source\skeleton.hpp
+	"SFMLfunctions.hpp"
+	"List.hpp"
+
+1294315132 source:r:\multiverse\skeletonanimator source\main.cpp
+	"SFMLfunctions.hpp"
+	"GUI.hpp"
+	"List.hpp"
+	"Skeleton.hpp"
+
+1294420454 r:\multiverse\skeletonanimator source\sfmlfunctions.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Network.hpp>
+	<cmath>
+	<string>
+	<iostream>
+	<fstream>
+	"std_string-functions.hpp"
+
+1261876548 r:\multiverse\skeletonanimator source\std_string-functions.hpp
+	<cstdlib>
+	<string>
+	<sstream>
+	<algorithm>
+
+1294085476 r:\multiverse\skeletonanimator source\gui.hpp
+	"SFMLfunctions.hpp"
+
+1276690194 r:\multiverse\skeletonanimator source\list.hpp
+	<cstdlib>
+
+1294340260 r:\multiverse\skeletonanimator source\skeleton.hpp
+	"SFMLfunctions.hpp"
+	"List.hpp"
+

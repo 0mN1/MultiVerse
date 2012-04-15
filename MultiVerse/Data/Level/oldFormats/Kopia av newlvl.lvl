@@ -1,0 +1,37 @@
+@LevelObjects
+setBgColor 0 100 100
+setGravity 9.82
+addImage p1 Data/Image/cocoon/p1.png
+addImage p2 Data/Image/cocoon/p2.png
+addImage p3 Data/Image/cocoon/p3.png
+addImage p4 Data/Image/cocoon/p4.png
+addImage p5 Data/WhiteSeed.png
+addImage DBW1 Data/Image/DBW/p1.png
+addImage DBW2 Data/Image/DBW/p2.png
+addImage DBW3 Data/Image/DBW/p3.png
+addImage DBW4 Data/Image/DBW/thing1.png
+addImage city1 Data/Image/City/p1.png
+addImage city2 Data/Image/City/h1.png
+addImage city3 Data/Image/City/h2.png
+addImage city4 Data/Image/City/h3.png
+addImage city5 Data/Image/City/h4.png
+addImage city6 Data/Image/City/h5.png
+addImage city7 Data/Image/City/h6.png
+addImage sunImage Data/Image/sun.png
+addSolid pl1 Image<-p1 -871.313 -732.094
+addSolid pl2 Image<-p2 1066.5 -57.375
+addSolid pl3 Image<-p3 131.625 877.5
+addSolid pl4 Image<-p4 -597.375 1562.62
+addSolid pl5 Image<-p5 1047.62 -817.836
+addSolid DBW01 Image<-DBW1 3995.94 1244.07
+addSolid DBW02 Image<-DBW2 5602.81 369.924
+addSolid DBW03 Image<-DBW3 5215.52 1508.25
+addSolid DBW04 Image<-DBW4 6758.75 1137.41
+addSolid city01 Image<-city1 3480.78 3392.72
+addSolid city02 Image<-city2 2554.78 2864.12
+addSolid city03 Image<-city3 3092.25 2906.75
+addSolid city04 Image<-city4 3684 2747
+addSolid city05 Image<-city5 4343.25 2888.75
+addArtifact sun Image<-sunImage 1481.71 -740.486 50
+
+@Script

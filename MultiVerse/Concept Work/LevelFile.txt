@@ -1,0 +1,16 @@
+addLevelConnection Level02 Data/Level/Level02.lvl~ 1225 980
+setStartPosition 50 350
+addBoolean passed false
+addArtifact MagicKey Data/Image/MagicKey.png~ 500 200
+addArtifact MagicDoor Data/Image/MagicDoor.png~ 100 400
+addSolid Level01 Data/Image/Obstacles/Level01.png~ 400 300
+everyFrame if Collision Player Artifact<-MagicKey : Boolean<-passed = true Delete Artifact<-MagicKey
+everyFrame if Boolean<-passed & Collision Player Artifact<-MagicDoor : MoveTo Level02
+onStart Player<-Health = 100
+
+# Timer Bomb
+addFloat Timer01 20
+everyFrame if Exist Artifact<-Explosives | Exist Artifact<-Explosion : Timer01 -= FrameTime
+everyFrame if Exist Artifact<-Explosives & Timer01 == 0 : addArtifact Explosion Data/Animation/Explosion/AnimationInfo.txt Artifact<-Explosives<-Position.x Artifact<-Explosives<-Position.y Delete Artifact<-Explosives Float<-Timer01 = 3
+everyFrame if Exist Artifact<-Explosion & Float<-Timer01 == 0 : Delete Artifact<-Explosion Delete Float<-Timer01
+everyFrame if Exist Artifact<-Explosion & Collision Player Artifact<-Explosion : Player<-Health -= 20 * FrameTime

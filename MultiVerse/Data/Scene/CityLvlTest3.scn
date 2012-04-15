@@ -1,0 +1,33 @@
+Name CityLvlTest3
+Lvl CityLvl
+Type D
+Dur 30
+Fcop 1
+Subt Hey | 2.2 0.4
+Subt I havent seen you in a while | 2.6 1
+Subt You know I need you right now | 3.6 1
+Subt The corporate suits have been trying to get rid our house extra hard this week | 4.6 1.4
+Subt Its getting worse every day | 6 1
+Subt Anyway I need you to come and help me finish building a strong fence around the house | 7.4 1.6
+Subt So that no one will be able to break in and do whatever they do | 9 1.6
+Char Player 0 KingOfLimbs
+	Pos 4532 523 0
+	Pos 4508 521 11
+	Pos 4249 516 12
+	Pos 3955 515 13
+	Pos 3537 519 14
+	Dir 0 0
+endChar
+Char Kim 0 KingOfLimbs
+	Pos 3311 524 0
+	Pos 3928 515 1
+	Pos 4345 517 2
+	Pos 4276 515 11
+	Pos 4059 515 12
+	Pos 3778 514 13
+	Pos 3379 522 14
+	Dir 1 0
+	Dir 0 10.8
+	Dir 0 11.4
+	Dir 1 13
+endChar

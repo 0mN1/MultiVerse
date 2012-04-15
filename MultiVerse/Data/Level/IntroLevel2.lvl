@@ -1,0 +1,32 @@
+@LevelObjects
+setBgColor 255 100 0
+setGravity 9.82
+addImage iFloor Data/Image/IntroLevel2/Floor.png
+addImage iBuild0 Data/Image/IntroLevel2/Build0.png
+addImage iSign0 Data/Image/IntroLevel2/BringsPeopleTogether.png
+addImage iBuild1 Data/Image/IntroLevel2/Build1.png
+addImage iSign1 Data/Image/IntroLevel2/MakesItEasy.png
+addImage iBuild2 Data/Image/IntroLevel2/Build2.png
+addImage iSign2 Data/Image/IntroLevel2/OneDayWeWillSueYou.png
+addImage iGround Data/Image/Ground1.png
+addImage iCloud Data/Image/cloudOrange.png
+addSolid Floor Image<-iFloor 0 1306
+addSolid Ground Image<-iGround 4023 1177
+addArtifact Build0 Image<-iBuild0 2064.72 99.8363 0 1.001
+addArtifact Sign0 Image<-iSign0 2087.89 553.298 0 1.0009
+addArtifact Build1 Image<-iBuild1 650.647 73.9882 0 1.001
+addArtifact Sign1 Image<-iSign1 710.891 552.722 0 1.0009
+addArtifact Build2 Image<-iBuild2 -504.223 73.75 0 1.001
+addArtifact Sign2 Image<-iSign2 -504.187 550.682 0 1.0009
+addArtifact Cloud1 Image<-iCloud 431.579 261.423 358.342 2
+addSpawnPoint 1935 810
+addActionBox Elevator 2076.92 661.738 2271.94 971.923
+addActionBox FraundlePortal -2325.48 716.636 -2071.08 981.792
+addAI CorpPeopleTest01 CorpPeople 1300 830 1
+addAI CorpPeopleTest02 CorpPeople -500 830 0
+addAI CorpPeopleTest03 CorpPeople -600 830 0
+
+@Script
+onStart Solid<-Floor<-Visible = 0
+everyFrame if ABCollision Player<-Position ActionBox<-Elevator : GotoLevel IntroLevel1 1 0
+everyFrame if ABCollision Player<-Position ActionBox<-FraundlePortal : GotoLevel IntroLevel3 0 0

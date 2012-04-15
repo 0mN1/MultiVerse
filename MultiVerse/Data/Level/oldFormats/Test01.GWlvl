@@ -1,0 +1,7 @@
+@LevelObjects
+addImage i1 Data/Image/Node02.png
+addImage i2 Data/Image/Node01.png
+addSolid s1 Image<-i1 446 366
+addArtifact a1 Image<-i2 678 485
+
+@Script

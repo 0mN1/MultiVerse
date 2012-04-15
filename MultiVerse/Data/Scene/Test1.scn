@@ -1,0 +1,24 @@
+Name Test1
+Lvl IntroLevel1
+Type D
+Dur 30
+Fcop 1
+Char Player 0 FirstBody
+	Pos 92 376 0
+	Dir 1 0
+endChar
+Char Friend 0 KingOfLimbs
+	Pos 1931 631 0
+	Pos 1624 629 1
+	Pos 1326 632 2
+	Pos 1204 640 2.09
+	Pos 1123 565 2.19
+	Pos 996 459 2.29
+	Pos 847 491 2.39
+	Pos 748 544 2.49
+	Pos 737 435 2.7
+	Pos 653 381 2.79
+	Pos 522 383 2.99
+	Pos 236 381 3.99
+	Dir 0 0
+endChar

@@ -1,0 +1,16 @@
+texture framebuffer
+vec2 position
+
+effect
+{
+	float len = distance(_in, position);
+
+	vec4 pixel = framebuffer(_in);
+
+	if (len < 0.052 && len > 0.05)
+	{
+		_out = vec4(1.0 - pixel.r, 1.0 - pixel.g, 1.0 - pixel.b, 1.0);
+	}
+	else
+		_out = pixel;
+}

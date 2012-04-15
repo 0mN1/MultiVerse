@@ -1,0 +1,13 @@
+Multiplayer Test Instruktioner
+
+1. Starta programmet Multiplayer på din dator. 
+2. Välj en av karaktärerna.
+3. Skriv in ett namn och tryck på knappen Server. (Waiting for client... bör nu komma upp i mitten av fönstret)
+
+4. Starta programmet Multiplayer på din brors dator. 
+5. Välj den andra karaktären. (Eller samma, det spelar ingen roll)
+6. Skriv in ett annat namn och tryck på knappen Client.
+7. I den tomma textboxen ska du skriva namnet på din dator (slut) eller IPaddressen.
+8. Tryck på connect och spelet borde starta i båda programmen.
+
+Etc. Om du vill testa på en dator så följer du samma steg, fast på steg 7 så skriver du namnet på datorn, "localhost" eller "127.0.0.1".

@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1294484728 source:r:\multiverse\multiplayer\main.cpp
+	"GameHandler.hpp"
+
+1294433892 r:\multiverse\multiplayer\sfmlfunctions.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Network.hpp>
+	<cmath>
+	<string>
+	<iostream>
+	<fstream>
+	"std_string-functions.hpp"
+
+1261876548 r:\multiverse\multiplayer\std_string-functions.hpp
+	<cstdlib>
+	<string>
+	<sstream>
+	<algorithm>
+
+1276690194 r:\multiverse\multiplayer\list.hpp
+	<cstdlib>
+
+1294426388 r:\multiverse\multiplayer\gui.hpp
+	"SFMLfunctions.hpp"
+
+1290073420 r:\multiverse\multiplayer\animation.hpp
+	"SFMLFunctions.hpp"
+
+1277307150 r:\multiverse\multiplayer\buttons.hpp
+	"SFMLfunctions.hpp"
+	<string>
+
+1294484854 r:\multiverse\multiplayer\player.hpp
+	"LevelObjects.hpp"
+	"LevelBackground.hpp"
+
+1277500186 r:\multiverse\multiplayer\levelobjects.hpp
+
+1278629456 r:\multiverse\multiplayer\levelbackground.hpp
+	"List.hpp"
+
+1294514292 r:\multiverse\multiplayer\gamehandler.hpp
+	<iostream>
+	<windows.h>
+	"SFMLfunctions.hpp"
+	"List.hpp"
+	"GUI.hpp"
+	"Animation.hpp"
+	"Buttons.hpp"
+	"Player.hpp"
+	"LevelObjects.hpp"
+	"LevelBackground.hpp"
+	"Multiplayer.hpp"
+
+1294445860 r:\multiverse\multiplayer\multiplayer.hpp
+	"SFMLfunctions.hpp"
+	"Player.hpp"
+

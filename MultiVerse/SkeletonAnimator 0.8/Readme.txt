@@ -1,0 +1,1 @@
+Ladda in WalkCycleBackup.txt och WalkCycle.txt för att se en gå animation jag gjort, och hur.

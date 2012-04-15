@@ -1,0 +1,51 @@
+@LevelObjects
+setBgColor 20 10 0
+setVignetteColor 40 20 0
+setGravity 9.82
+addImage iCity01 Data/Image/CityLvl/City01.png
+addImage iBalconypt1 Data/Image/CityLvl/Balconypt1.png
+addImage iBalconyp2 Data/Image/CityLvl/Balconyp2.png
+addImage iCity00 Data/Image/CityLvl/City00.png
+addImage iCity02 Data/Image/CityLvl/City02.png
+addImage iCity03 Data/Image/CityLvl/City03.png
+addImage iCity04 Data/Image/CityLvl/City04.png
+addImage iCity05 Data/Image/CityLvl/City05.png
+addImage iClockpoint Data/Image/CityLvl/Clockpoint.png
+addImage iHouses Data/Image/CityLvl/Houses.png
+addImage iGr01 Data/Image/CityLvl/Ground/Gr_01.png
+addImage iGr02 Data/Image/CityLvl/Ground/Gr_02.png
+addImage iGr03 Data/Image/CityLvl/Ground/Gr_03.png
+addImage iPar00 Data/Image/CityLvl/Par01/Par00.png
+addImage iPar01 Data/Image/CityLvl/Par01/Par01.png
+addImage iPar02 Data/Image/CityLvl/Par01/Par02.png
+addImage iPar03 Data/Image/CityLvl/Par01/Par03.png
+addImage iPar04 Data/Image/CityLvl/Par01/Par04.png
+addImage iPar05 Data/Image/CityLvl/Par01/Par05.png
+addImage iPar06 Data/Image/CityLvl/Par01/Par06.png
+addImage iPar07 Data/Image/CityLvl/Par01/Par07.png
+addImage iFloor0 Data/Image/CityLvl/Par01/Floor0.png
+addImage iFloor1 Data/Image/CityLvl/Par01/Floor1.png
+addImage iFloor2 Data/Image/CityLvl/Par01/Floor2.png
+addImage iCity00broke Data/Image/CityLvl/CityPt2/City_0000_broke.png
+addImage iCity05Building Data/Image/CityLvl/CityPt2/City_0005_Building.png
+addImage iBrownCloud Data/Image/cloudOrange.png
+addImage iSeed Data/Image/WhiteSeed.png
+addSolid Gr1 Image<-iGr01 -2800 800
+addSolid Gr2 Image<-iGr02 533.5 800
+addSolid Gr3 Image<-iGr03 3867 800
+addSolid House Image<-iHouses -881.18 75.2778
+addArtifact CPB2 Image<-iCity04 2561.66 -301.119 0 1.1
+addArtifact CPBRoom Image<-iCity00 2686.96 325.737 0 1.13
+addArtifact CPB3 Image<-iCity03 1133.83 -307.372 0 1.1
+addArtifact CPB1 Image<-iCity05 3895.17 -316.105 0 1.1
+addArtifact cloud1 Image<-iBrownCloud 1949.47 47.2729 0 3
+addArtifact cloud2 Image<-iBrownCloud -125.379 86.6484 353.457 3
+addArtifact Seed Image<-iSeed 534 572 0 1
+addSpawnPoint 4443.14 364.949
+addEdgeBox 118.449 63.3658 1 1
+addEdgeBox -388.495 -463.254 1 1
+addEdgeBox -1725.88 -463.833 1 0
+addActionBox SeedBox 405.626 428.365 580.154 611.533
+
+@Script
+everyFrame if ABCollision Player<-Position ActionBox<-SeedBox : GotoLevel IntroLevel3 0 0

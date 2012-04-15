@@ -1,0 +1,4 @@
+CenterRHand -219 -90 CenterRForearm -120 -90 CenterRUpperarm -24 -95 PointRFoot -5 167 CenterRFoot -4 118
+CenterRKnee -11 69 CenterRHip -15 24 CenterLHand 205 -90 CenterLForearm 106 -90 CenterLUpperarm 10 -95
+PointLFoot 44 167 CenterLFoot 38 118 CenterLKnee 30 69 CenterLHip 25 24 PointHead -1 -190
+CenterHead 0 -132 CenterBody 0 0 

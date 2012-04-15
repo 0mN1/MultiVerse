@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="MultiVerse" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="MultiVerse" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="Lib\libsfml-network-s.a" />
+					<Add library="Lib\libsfml-audio-s.a" />
+					<Add library="Lib\libsfml-graphics-s.a" />
+					<Add library="Lib\libsfml-window-s.a" />
+					<Add library="Lib\libsfml-system-s.a" />
+					<Add library="Lib\libsfml-main.a" />
+					<Add library="Lib\libopengl32.a" />
+					<Add library="Lib\libglu32.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Animation.hpp" />
+		<Unit filename="AnimationSystem.hpp" />
+		<Unit filename="ArtificialIntelligence.hpp" />
+		<Unit filename="Buttons.hpp" />
+		<Unit filename="GUI.hpp" />
+		<Unit filename="GameHandler.hpp" />
+		<Unit filename="LevelScript.hpp" />
+		<Unit filename="List.hpp" />
+		<Unit filename="Player.hpp" />
+		<Unit filename="SFMLfunctions.hpp" />
+		<Unit filename="Skeleton.hpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="std_string-functions.hpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

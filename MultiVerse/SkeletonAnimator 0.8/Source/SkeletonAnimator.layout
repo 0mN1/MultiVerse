@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="GUI.hpp" open="1" top="0" tabpos="1">
+		<Cursor position="4396" topLine="105" />
+	</File>
+	<File name="Main.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="22295" topLine="22" />
+	</File>
+	<File name="SFMLfunctions.hpp" open="1" top="0" tabpos="4">
+		<Cursor position="19309" topLine="147" />
+	</File>
+	<File name="Skeleton.hpp" open="1" top="0" tabpos="3">
+		<Cursor position="7392" topLine="324" />
+	</File>
+</CodeBlocks_layout_file>

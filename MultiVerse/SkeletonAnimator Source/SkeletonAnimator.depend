@@ -1,0 +1,213 @@
+# depslib dependency file v1.0
+1296658362 source:f:\multiverse\skeletonanimator source\main.cpp
+	"SFMLfunctions.hpp"
+	"GUI.hpp"
+	"List.hpp"
+	"Skeleton.hpp"
+
+1296660464 f:\multiverse\skeletonanimator source\sfmlfunctions.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Network.hpp>
+	<cmath>
+	<string>
+	<iostream>
+	<fstream>
+	"std_string-functions.hpp"
+
+1261876548 f:\multiverse\skeletonanimator source\std_string-functions.hpp
+	<cstdlib>
+	<string>
+	<sstream>
+	<algorithm>
+
+1294085476 f:\multiverse\skeletonanimator source\gui.hpp
+	"SFMLfunctions.hpp"
+
+1276690194 f:\multiverse\skeletonanimator source\list.hpp
+	<cstdlib>
+
+1296660582 f:\multiverse\skeletonanimator source\skeleton.hpp
+	"SFMLfunctions.hpp"
+	"List.hpp"
+
+1295041028 source:g:\multiverse\skeletonanimator source\main.cpp
+	"SFMLfunctions.hpp"
+	"GUI.hpp"
+	"List.hpp"
+	"Skeleton.hpp"
+
+1296207108 g:\multiverse\skeletonanimator source\sfmlfunctions.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Network.hpp>
+	<cmath>
+	<string>
+	<iostream>
+	<fstream>
+	"std_string-functions.hpp"
+
+1261876548 g:\multiverse\skeletonanimator source\std_string-functions.hpp
+	<cstdlib>
+	<string>
+	<sstream>
+	<algorithm>
+
+1294085476 g:\multiverse\skeletonanimator source\gui.hpp
+	"SFMLfunctions.hpp"
+
+1276690194 g:\multiverse\skeletonanimator source\list.hpp
+	<cstdlib>
+
+1296639266 g:\multiverse\skeletonanimator source\skeleton.hpp
+	"SFMLfunctions.hpp"
+	"List.hpp"
+
+1295041028 source:r:\multiverse\skeletonanimator source\main.cpp
+	"SFMLfunctions.hpp"
+	"GUI.hpp"
+	"List.hpp"
+	"Skeleton.hpp"
+
+1294420454 r:\multiverse\skeletonanimator source\sfmlfunctions.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Network.hpp>
+	<cmath>
+	<string>
+	<iostream>
+	<fstream>
+	"std_string-functions.hpp"
+
+1261876548 r:\multiverse\skeletonanimator source\std_string-functions.hpp
+	<cstdlib>
+	<string>
+	<sstream>
+	<algorithm>
+
+1294085476 r:\multiverse\skeletonanimator source\gui.hpp
+	"SFMLfunctions.hpp"
+
+1276690194 r:\multiverse\skeletonanimator source\list.hpp
+	<cstdlib>
+
+1294916350 r:\multiverse\skeletonanimator source\skeleton.hpp
+	"SFMLfunctions.hpp"
+	"List.hpp"
+
+1333372034 source:f:\multiverse latest\skeletonanimator source\main.cpp
+	"../SFMLfunctions.hpp"
+	"../GUI.hpp"
+	"List.hpp"
+	"../Skeleton.hpp"
+
+1296660464 f:\multiverse latest\skeletonanimator source\sfmlfunctions.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Network.hpp>
+	<cmath>
+	<string>
+	<iostream>
+	<fstream>
+	"std_string-functions.hpp"
+
+1261876548 f:\multiverse latest\skeletonanimator source\std_string-functions.hpp
+	<cstdlib>
+	<string>
+	<sstream>
+	<algorithm>
+
+1294085476 f:\multiverse latest\skeletonanimator source\gui.hpp
+	"SFMLfunctions.hpp"
+
+1276693794 f:\multiverse latest\skeletonanimator source\list.hpp
+	<cstdlib>
+
+1298286048 f:\multiverse latest\skeletonanimator source\skeleton.hpp
+	"SFMLfunctions.hpp"
+	"List.hpp"
+
+1320092124 source:m:\multiverse latest\skeletonanimator source\main.cpp
+	"../SFMLfunctions.hpp"
+	"../GUI.hpp"
+	"List.hpp"
+	"../Skeleton.hpp"
+
+1310576480 m:\multiverse latest\skeletonanimator source\sfmlfunctions.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Network.hpp>
+	<cmath>
+	<string>
+	<iostream>
+	<fstream>
+	"std_string-functions.hpp"
+
+1261880148 m:\multiverse latest\skeletonanimator source\std_string-functions.hpp
+	<cstdlib>
+	<string>
+	<sstream>
+	<algorithm>
+
+1294089076 m:\multiverse latest\skeletonanimator source\gui.hpp
+	"SFMLfunctions.hpp"
+
+1276693794 m:\multiverse latest\skeletonanimator source\list.hpp
+	<cstdlib>
+
+1310575888 m:\multiverse latest\skeletonanimator source\skeleton.hpp
+	"SFMLfunctions.hpp"
+	"List.hpp"
+
+1319408954 m:\multiverse latest\sfmlfunctions.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Network.hpp>
+	<cmath>
+	<string>
+	<iostream>
+	<fstream>
+	"std_string-functions.hpp"
+
+1261880148 m:\multiverse latest\std_string-functions.hpp
+	<cstdlib>
+	<string>
+	<sstream>
+	<algorithm>
+
+1320709514 m:\multiverse latest\skeleton.hpp
+	"SFMLfunctions.hpp"
+	"List.hpp"
+
+1276693794 m:\multiverse latest\list.hpp
+	<cstdlib>
+
+1319405386 m:\multiverse latest\gui.hpp
+	"SFMLfunctions.hpp"
+
+1329488650 f:\multiverse latest\sfmlfunctions.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Network.hpp>
+	<cmath>
+	<string>
+	<iostream>
+	<fstream>
+	"std_string-functions.hpp"
+
+1261880148 f:\multiverse latest\std_string-functions.hpp
+	<cstdlib>
+	<string>
+	<sstream>
+	<algorithm>
+
+1327803520 f:\multiverse latest\gui.hpp
+	"SFMLfunctions.hpp"
+
+1329567778 f:\multiverse latest\skeleton.hpp
+	"SFMLfunctions.hpp"
+	"List.hpp"
+
+1276693794 f:\multiverse latest\list.hpp
+	<cstdlib>
+

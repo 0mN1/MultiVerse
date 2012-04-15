@@ -1,0 +1,4 @@
+CenterRHand -11.9833 24.609 CenterRForearm -11.9832 -41.5124 CenterRUpperarm -11.9832 -82.622 PointRFoot -0.261173 161.249 CenterRFoot 0.0192575 109.25
+CenterRKnee -4.98862 44.2508 CenterRHip -7.03147 -0.747263 CenterLHand 10.0026 28.6611 CenterLForearm 10.0025 -40.3678 CenterLUpperarm 10.0025 -83.4143
+PointLFoot 13.5158 164.69 CenterLFoot 13.7634 112.69 CenterLKnee 9.99333 46.6761 CenterLHip 9.06619 1.67459 PointHead -3 -163
+CenterHead -4 -111 CenterBody 0 0 

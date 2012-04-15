@@ -1,0 +1,5 @@
+@LevelObjects
+setBgColor 250 150 50
+setGravity 9.82
+
+@Script

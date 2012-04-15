@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="..\GUI.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="2780" topLine="58" />
+	</File>
+	<File name="Animation.hpp" open="0" top="0" tabpos="4">
+		<Cursor position="1953" topLine="0" />
+	</File>
+	<File name="Buttons.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="1379" topLine="16" />
+	</File>
+	<File name="List.hpp" open="0" top="0" tabpos="3">
+		<Cursor position="2320" topLine="72" />
+	</File>
+	<File name="Main.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="57391" topLine="32" />
+	</File>
+	<File name="resource.rc" open="0" top="0" tabpos="3">
+		<Cursor position="50" topLine="0" />
+	</File>
+	<File name="std_string-functions.hpp" open="0" top="0" tabpos="1">
+		<Cursor position="415" topLine="0" />
+	</File>
+	<File name="..\LevelScript.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="304" topLine="8" />
+	</File>
+	<File name="..\SFMLfunctions.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="7976" topLine="64" />
+	</File>
+</CodeBlocks_layout_file>

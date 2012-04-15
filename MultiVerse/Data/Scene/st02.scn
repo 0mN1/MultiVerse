@@ -1,0 +1,13 @@
+Name st02
+Lvl 
+Type D
+Dur 30
+Fcop 1
+Char t01 0 KingOfLimbs
+	Pos 579 372 0
+	Pos 549 345 1
+	Pos 544 437 1.4
+	Pos 488.118 398.448 1.45
+	Pos 549 345 2
+	Dir 0 0
+endChar

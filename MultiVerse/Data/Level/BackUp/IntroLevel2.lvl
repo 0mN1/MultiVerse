@@ -1,0 +1,36 @@
+@LevelObjects
+setBgColor 255 100 0
+setGravity 9.82
+addImage iFloor Data/Image/IntroLevel2/Floor.png
+addImage iHouse Data/Image/IntroLevel2/House.png
+addImage iChimney Data/Image/IntroLevel2/Chimney.png
+addImage iFence Data/Image/IntroLevel2/Fence.png
+addImage iBuild0 Data/Image/IntroLevel2/Build0.png
+addImage iSign0 Data/Image/IntroLevel2/BringsPeopleTogether.png
+addImage iBuild1 Data/Image/IntroLevel2/Build1.png
+addImage iSign1 Data/Image/IntroLevel2/MakesItEasy.png
+addImage iBuild2 Data/Image/IntroLevel2/Build2.png
+addImage iSign2 Data/Image/IntroLevel2/OneDayWeWillSueYou.png
+addSolid Floor Image<-iFloor 0 1306
+addSolid House Image<-iHouse -1994.02 564
+addArtifact Fence Image<-iFence -2592.01 585.403 0 0.99999
+addArtifact Chimney Image<-iChimney -2321.38 111.651 0 1.001
+addArtifact Build0 Image<-iBuild0 2064.72 99.8363 0 1.001
+addArtifact Sign0 Image<-iSign0 2087.89 553.298 0 1.0009
+addArtifact Build1 Image<-iBuild1 650.647 73.9882 0 1.001
+addArtifact Sign1 Image<-iSign1 710.891 552.722 0 1.0009
+addArtifact Build2 Image<-iBuild2 -504.223 73.75 0 1.001
+addArtifact Sign2 Image<-iSign2 -504.186 550.682 0 1.0009
+addSpawnPoint 1935 810
+addEdgeBox -1286.97 548.019 1 1
+addEdgeBox -1571.02 157.394 1 1 
+addEdgeBox -2573.63 156.911 1 0
+addEdgeBox -2703.35 538.373 1 0
+addEdgeBox -2701.9 631.931 0 0
+addActionBox Elevator 2076.92 661.738 2271.94 971.923
+addAI CorpPeopleTest01 CorpPeople 1300 830 1
+addAI CorpPeopleTest02 CorpPeople -500 830 0
+addAI CorpPeopleTest03 CorpPeople -600 830 0
+
+@Script
+everyFrame if ABCollision Player<-Position ActionBox<-Elevator : GotoLevel IntroLevel1 1 0

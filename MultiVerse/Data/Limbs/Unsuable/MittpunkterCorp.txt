@@ -1,0 +1,6 @@
+12 13 #ForeArm
+26 33 #Body
+20 25 #Thigh
+12 19 #LowerLeg
+12 14 #UpperArm
+9 37 #Head

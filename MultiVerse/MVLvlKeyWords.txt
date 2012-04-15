@@ -1,0 +1,44 @@
+Category 01: Color R:0 G:128 B:255
+addLevelConnection
+setStartPosition
+addBoolean
+addFloat
+addArtifact
+addSolid
+addImage
+addAnimation
+addMusicTrack
+everyFrame
+onStart
+onEnd
+if
+addFunction
+endFunction
+setGravity
+addActionBox
+setBgColor
+
+Category 02: Color R:0 G:196 B:98
+Exist
+PPCollision
+BBCollision
+Delete
+Distance
+Angle
+
+Category 03: Color R:128 G:0 B:255
+Boolean
+Float
+Image
+Animation
+Solid
+Artifact
+Player
+MusicTrack
+Function
+
+Category 04: Color R:255 G:0 B:128
+true
+false
+Alpha
+Rotation
