@@ -1,0 +1,15 @@
+In this repository you should find the executables of:
+MultiVerse.exe
+LevelEditor.exe
+SkeletonAnimator.exe
+TellTaleEditor.exe
+Multiplayer.exe
+
+and a code::blocks workspace containing all five projects.
+
+The projectfiles are located as follows:
+MultiVerse.cbp			./
+LevelEditor.cbp			./LevelEditor/
+SkeletonAnimator.cbp	./SkeletonAnimator Source/
+TellTaleEditor.cbp		./TellTaleEditor/
+Multiplayer.cbp			./Multiplayer/
