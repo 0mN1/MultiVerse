@@ -1,0 +1,13 @@
+Name CityAct02
+Lvl CityLvl
+Type D
+Dur 30
+Fcop 1
+Char corp 1 CorporatePeople
+	Pos 1289.96 470.4 0
+	Dir 0 0
+endChar
+Char corp2 1 CorporatePeople
+	Pos 930.2 470.24 0
+	Dir 1 0
+endChar

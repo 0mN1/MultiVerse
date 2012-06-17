@@ -1,0 +1,16 @@
+# Level Objects and Variables
+addImage Guy02LImage Data/Image/Guy02l.png
+addImage Guy02RImage Data/Image/Guy02r.png
+addImage Guy01LImage Data/Image/Guy01l.png
+addImage Guy01RImage Data/Image/Guy01r.png
+addImage ComplexLevel Data/Image/Obstacles/ComplexLevel.png
+addSolid Guy02L Image<-Guy02LImage 850 496
+addSolid Guy02R Image<-Guy02RImage 379 456
+addSolid Guy01L Image<-Guy01LImage 975 487
+addSolid Guy01R Image<-Guy01RImage 247 461
+addSolid SolidLevel Image<-ComplexLevel 1143 1755
+
+# Put Script Here #
+#  |   |   |   |  #
+#  |   |   |   |  #
+#  V   V   V   V  #

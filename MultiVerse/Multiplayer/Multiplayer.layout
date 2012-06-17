@@ -4,13 +4,13 @@
 	<File name="GameHandler.hpp" open="0" top="0" tabpos="1">
 		<Cursor position="222" topLine="0" />
 	</File>
-	<File name="Multiplayer.hpp" open="0" top="0" tabpos="2">
-		<Cursor position="6913" topLine="0" />
+	<File name="Multiplayer.hpp" open="1" top="1" tabpos="2">
+		<Cursor position="139" topLine="0" />
 	</File>
 	<File name="Player.hpp" open="0" top="0" tabpos="3">
 		<Cursor position="0" topLine="264" />
 	</File>
-	<File name="main.cpp" open="0" top="0" tabpos="1">
+	<File name="main.cpp" open="1" top="0" tabpos="1">
 		<Cursor position="336" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>

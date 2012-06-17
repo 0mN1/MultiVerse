@@ -1,0 +1,66 @@
+NewAnimation
+
+    NewFrame
+
+        CenterRHand -12.1741 27.589 CenterRForearm -12.1741 -38.5719 CenterRUpperarm -12.1741 -79.6815 PointRFoot -23.6471 159.962 CenterRFoot -18.3404 108.234
+        CenterRKnee -25.1931 43.4031 CenterRHip -7.03318 2.18161 CenterLHand 9.80972 23.5684 CenterLForearm 9.80975 -45.4605 CenterLUpperarm 9.80975 -80.5246
+        PointLFoot 24.5985 165.978 CenterLFoot 25.1583 113.98 CenterLKnee 10.2457 49.562 CenterLHip 9.07003 4.56626 PointHead -5.94772 -160.06
+        CenterHead -4.01834 -108.087 CenterBody 0 2.91262 Duration 0.5
+
+    EndFrame
+
+    NewFrame
+
+        CenterRHand -2.5578 23.8232 CenterRForearm -2.55789 -42.3377 CenterRUpperarm -2.55789 -83.4473 PointRFoot 1.88589 159.946 CenterRFoot 1.86389 107.946
+        CenterRKnee 1.28207 42.7567 CenterRHip -6.90177 -1.53805 CenterLHand 19.3769 22.3461 CenterLForearm 19.3763 -46.6828 CenterLUpperarm 19.3763 -81.7469
+        PointLFoot 12.5853 124.214 CenterLFoot 0.609996 73.6102 CenterLKnee -33.806 17.1518 CenterLHip 8.81849 2.68964 PointHead 8.52481 -162.73
+        CenterHead 8.82249 -110.721 CenterBody 0 0 Duration 0.6
+
+    EndFrame
+
+    NewFrame
+
+        CenterRHand -5.08777 23.9392 CenterRForearm -5.088 -42.2217 CenterRUpperarm -5.08802 -83.3313 PointRFoot 17.4194 157.008 CenterRFoot 17.4104 105.008
+        CenterRKnee -4.63547 43.6571 CenterRHip -6.94525 -1.32798 CenterLHand 16.8887 21.7959 CenterLForearm 16.8877 -47.233 CenterLUpperarm 16.8877 -82.2971
+        PointLFoot -50.9207 128.066 CenterLFoot -47.6207 76.1696 CenterLKnee -35.2474 11.2164 CenterLHip 8.89602 2.4209 PointHead 8.01641 -162.884
+        CenterHead 5.4598 -110.938 CenterBody 0 0 Duration 0.3
+
+    EndFrame
+
+    NewFrame
+
+        CenterRHand -4.43284 23.9017 CenterRForearm -4.43285 -42.2592 CenterRUpperarm -4.43286 -83.3688 PointRFoot 31.8459 154.794 CenterRFoot 28.8605 102.88
+        CenterRKnee 7.69615 41.2196 CenterRHip -6.9346 -1.38253 CenterLHand 17.5341 21.9312 CenterLForearm 17.534 -47.0977 CenterLUpperarm 17.534 -82.1618
+        PointLFoot -35.878 154.043 CenterLFoot -35.8207 102.042 CenterLKnee -18.4776 38.2363 CenterLHip 8.87672 2.49075 PointHead 0.745489 -162.6
+        CenterHead 6.33162 -110.892 CenterBody 0 0 Duration 0.3
+
+    EndFrame
+
+    NewFrame
+
+        CenterRHand -11.0088 24.5131 CenterRForearm -11.0092 -41.6479 CenterRUpperarm -11.0092 -82.7575 PointRFoot 42.7238 147.169 CenterRFoot 34.8312 95.7719
+        CenterRKnee -5.00739 44.1693 CenterRHip -7.02218 -0.830029 CenterLHand 10.9859 20.8023 CenterLForearm 10.9843 -48.2266 CenterLUpperarm 10.9843 -83.2907
+        PointLFoot -25.4831 159.894 CenterLFoot -23.6169 107.927 CenterLKnee -6.0932 44.17 CenterLHip 9.04583 1.78126 PointHead -2.871 -163.053
+        CenterHead -2.45411 -111.045 CenterBody 0 0 Duration 0.5
+
+    EndFrame
+
+    NewFrame
+
+        CenterRHand -5.57735 23.9705 CenterRForearm -5.57736 -42.1904 CenterRUpperarm -5.57737 -83.3 PointRFoot 43.602 104.856 CenterRFoot 14.6694 61.6483
+        CenterRKnee -41.1711 28.0064 CenterRHip -6.95293 -1.28717 CenterLHand 16.4041 21.6982 CenterLForearm 16.404 -47.3307 CenterLUpperarm 16.404 -82.3948
+        PointLFoot -5.50527 162.891 CenterLFoot -3.75112 110.919 CenterLKnee -6.00512 44.8367 CenterLHip 8.91009 2.36861 PointHead 7.05945 -162.929
+        CenterHead 4.80812 -110.968 CenterBody 0 0 Duration 0.6
+
+    EndFrame
+
+    NewFrame
+
+        CenterRHand -8.5168 24.2195 CenterRForearm -8.51682 -41.9414 CenterRUpperarm -8.51683 -83.051 PointRFoot -23.7455 140.819 CenterRFoot -21.6632 88.8603
+        CenterRKnee -42.2441 27.0026 CenterRHip -6.99406 -1.04072 CenterLHand 13.4828 21.1701 CenterLForearm 13.4828 -47.8588 CenterLUpperarm 13.4828 -82.9229
+        PointLFoot 16.0165 164.928 CenterLFoot 16.5192 112.929 CenterLKnee 11.9803 46.9639 CenterLHip 8.98821 2.05234 PointHead 0.558196 -163.077
+        CenterHead 0.884671 -111.069 CenterBody 0 0 Duration 0.3
+
+    EndFrame
+
+EndAnimation

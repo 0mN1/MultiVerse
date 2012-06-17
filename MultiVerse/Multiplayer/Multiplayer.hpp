@@ -4,7 +4,7 @@
 #include "SFMLfunctions.hpp"
 #include "Player.hpp"
 
-#define NETWORKPORT 4346
+#define NETWORKPORT 4709
 #define NETWORKFREQ 0.1
 
 /// Upnp port forwarding

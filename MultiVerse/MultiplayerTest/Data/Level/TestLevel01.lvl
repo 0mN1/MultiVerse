@@ -1,0 +1,34 @@
+@LevelObjects
+setBgColor 20 20 20
+setGravity 9.82
+addImage iPFshort Data/Image/TestPlatform/CityFloorShort.png
+addImage iPFmedium Data/Image/TestPlatform/CityFloorMedium.png
+addImage iDoor Data/Image/TestPlatform/Goal1.png
+addSolid pf1 Image<-iPFmedium 300 600
+addSolid mPf Image<-iPFshort 1200 600
+addSolid pf2 Image<-iPFmedium 2300 600
+addArtifact Door Image<-iDoor 2389.98 449.995 0 1.00001
+addSpawnPoint 207.228 378.308
+addEdgeBox 498.741 549.741 1 1
+addEdgeBox 2100.22 549.533 1 0
+addActionBox 1 400 495.259 500 731.65
+addActionBox 2 2100 447.981 2200 741.603
+addActionBox 3 451.481 -644.973 867.13 -426.399
+addActionBox 4 484 650 718 732
+addActionBox Portal 2347.82 351.298 2484.62 545.698
+
+@Script
+addInt mPfDir 0
+addFloat timer 0
+onStart Solid<-mPf<-xMomentum = -250
+everyFrame Function<-mPfUpdate
+everyFrame if ABCollision Player<-Position ActionBox<-Portal : GotoLevel IntroLevel3 0 1
+
+addFunction mPfUpdate
+
+	if Int<-mPfDir == 0 && ABCollision Solid<-mPf ActionBox<-1 : Float<-timer += FrameTime Solid<-mPf<-xMomentum = 0 if Float<-timer > 1 : Float<-timer = 0 Solid<-mPf<-yMomentum = -250 Int<-mPfDir = 1 Output up
+	if Int<-mPfDir == 3 && ABCollision Solid<-mPf ActionBox<-2 : Float<-timer += FrameTime Solid<-mPf<-xMomentum = 0 if Float<-timer > 1 : Float<-timer = 0 Solid<-mPf<-xMomentum = -250 Int<-mPfDir = 0 Output left
+	if Int<-mPfDir == 1 && ABCollision Solid<-mPf ActionBox<-3 : Float<-timer += FrameTime Solid<-mPf<-yMomentum = 0 if Float<-timer > 1 : Float<-timer = 0 Solid<-mPf<-yMomentum = 250 Int<-mPfDir = 2 Output down
+	if Int<-mPfDir == 2 && ABCollision Solid<-mPf ActionBox<-4 : Float<-timer += FrameTime Solid<-mPf<-yMomentum = 0 if Float<-timer > 1 : Float<-timer = 0 Solid<-mPf<-xMomentum = 250 Int<-mPfDir = 3 Output right
+
+endFunction

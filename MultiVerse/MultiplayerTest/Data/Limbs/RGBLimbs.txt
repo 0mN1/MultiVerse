@@ -1,0 +1,90 @@
+//Right Side
+
+PointRHand=0,0,0
+CenterRHand=50,0,0
+PointRForearm=CenterRHand
+CenterRForearm=100,0,0
+PointRUpperarm=CenterRForearm
+CenterRUpperarm=150,0,0
+
+CenterRHip=0,100,0
+CenterRKnee=0,150,0
+PointRHip=CenterRKnee
+PointRKnee=0,200,0
+CenterRFoot=PointRKnee
+PointRFoot=0,250,0
+
+//Left Side
+
+PointLHand=0,0,50
+CenterLHand=0,0,100
+PointLForearm=CenterLHand
+CenterLForearm=0,0,150
+PointLUpperarm=CenterLForearm
+CenterLUpperarm=0,0,200
+
+CenterLHip=0,0,250
+CenterLKnee=50,50,0
+PointLHip=CenterLKnee
+PointLKnee=100,50,0
+CenterLFoot=PointLKnee
+PointLFoot=150,50,0
+
+//Body
+
+PointBody=200,0,0
+PointHead=250,0,0
+CenterBody=0,50,0
+CenterHead=PointBody
+
+//Distances
+
+PointHand:CenterHand=31
+PointForearm:CenterForearm=99
+PointUpperarm:CenterUpperarm=96
+
+PointBody:CenterBody=132
+
+//Positions
+
+Limb00= 7,27
+Limb01=23,27
+Limb02=34,33
+Limb03=87,72 //72,139
+Limb04=15,33 //33,138
+Limb05=14,18 //18,14
+Limb06=13,28 //28,13
+Limb07= 7,38 //38,7
+
+vList.AddNode(IDVector("PointRHand", Color(0, 0, 0)));
+vList.AddNode(IDVector("CenterRHand", Color(50, 0, 0)));
+vList.AddNode(IDVector("PointRForearm", Color(50, 0, 0)));
+vList.AddNode(IDVector("CenterRForearm", Color(100, 0, 0)));
+vList.AddNode(IDVector("PointRUpperarm", Color(100, 0, 0)));
+vList.AddNode(IDVector("CenterRUpperarm", Color(150, 0, 0)));
+
+vList.AddNode(IDVector("PointRFoot", Color(0, 250, 0)));
+vList.AddNode(IDVector("CenterRFoot", Color(0, 200, 0)));
+vList.AddNode(IDVector("PointRKnee", Color(0, 200, 0)));
+vList.AddNode(IDVector("CenterRKnee", Color(0, 150, 0)));
+vList.AddNode(IDVector("PointRHip", Color(0, 150, 0)));
+vList.AddNode(IDVector("CenterRHip", Color(0, 100, 0)));
+
+vList.AddNode(IDVector("PointLHand", Color(0, 0, 50)));
+vList.AddNode(IDVector("CenterLHand", Color(0, 0, 100)));
+vList.AddNode(IDVector("PointLForearm", Color(0, 0, 100)));
+vList.AddNode(IDVector("CenterLForearm", Color(0, 0, 150)));
+vList.AddNode(IDVector("PointLUpperarm", Color(0, 0, 150)));
+vList.AddNode(IDVector("CenterLUpperarm", Color(0, 0, 200)));
+
+vList.AddNode(IDVector("PointLFoot", Color(150, 50, 0)));
+vList.AddNode(IDVector("CenterLFoot", Color(100, 50, 0)));
+vList.AddNode(IDVector("PointLKnee", Color(100, 50, 0)));
+vList.AddNode(IDVector("CenterLKnee", Color(50, 50, 0)));
+vList.AddNode(IDVector("PointLHip", Color(50, 50, 0)));
+vList.AddNode(IDVector("CenterLHip", Color(0, 0, 250)));
+
+vList.AddNode(IDVector("PointHead", Color(250, 0, 0)));
+vList.AddNode(IDVector("CenterHead", Color(200, 0, 0)));
+vList.AddNode(IDVector("PointBody", Color(200, 0, 0)));
+vList.AddNode(IDVector("CenterBody", Color(0, 50, 0)));

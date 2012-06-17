@@ -1,0 +1,7 @@
+Multiplayer Test Instruktioner
+
+1. Starta programmet Multiplayer.exe.
+2. Välj en karaktär.
+3. Skriv ditt namn (Mattias) och tryck på knappen Client.
+4. I den tomma textboxen skriver du 85.227.244.176 eller 0mn1.servegame.com.
+5. Tryck på connect.

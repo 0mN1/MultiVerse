@@ -1,0 +1,22 @@
+Name CityAct01
+Lvl CityLvl
+Type S
+Dur 30
+Fcop 1
+Subt Kim: Hey! There you are. | 2.8 2.8
+Lpii 1
+PChar PLAYER 0 KingOfLimbs
+	Pos 4535 524 0
+	Dir 0 0
+endChar
+Char Kim 0 Kim
+	Pos 3589 515 0
+	Pos 4096 513 2
+	Pos 4307 514 2.8
+	Pos 4336 515 3
+	Pos 4336 515 6
+	Pos 4003 513 8
+	Pos 3839 514 9
+	Dir 1 0
+	Dir 0 6
+endChar

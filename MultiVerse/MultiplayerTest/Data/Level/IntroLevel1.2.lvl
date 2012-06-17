@@ -1,0 +1,65 @@
+@LevelObjects
+setBgColor 255 100 0
+setGravity 9.82
+addImage iSun Data/Image/IntroLevel/Sun.png
+addImage iCity Data/Image/IntroLevel/Back0.png
+addImage iBuild0 Data/Image/IntroLevel/Build0.png
+addImage iBuild1 Data/Image/IntroLevel/Build1.png
+addImage iBuild2 Data/Image/IntroLevel/Build2.png
+addImage iGrass0 Data/Image/IntroLevel/Grass0.png
+addImage iGrass1 Data/Image/IntroLevel/Grass1.png
+addImage iBranch Data/Image/IntroLevel/DBranch.png
+addImage iTree Data/Image/IntroLevel/Tree.png
+addImage iCrownBack Data/Image/IntroLevel/CrBack.png
+addImage iCrownFront Data/Image/IntroLevel/Cr.png
+addImage iBalc Data/Image/IntroLevel/Balc.png
+addImage iDoor Data/Image/IntroLevel/Door.png
+addImage iExit Data/Image/IntroLevel/EExit.png
+addImage iExitLight Data/Image/IntroLevel/ELight.png
+addSolid Build0 Image<-iBuild0 249.2 1261.06
+addSolid Build1 Image<-iBuild1 1593.2 1416.85
+addSolid Balc Image<-iBalc 2616.8 1085.96
+addSolid Tree Image<-iTree -175 160
+addArtifact Sun Image<-iSun 327.019 2.95315 0 150
+addArtifact City Image<-iCity 143.274 685.197 0 10
+addArtifact Door Image<-iDoor 2703.56 883.274 0 1.001
+addArtifact Exit Image<-iExit 2755.62 730.291 0 1.0001
+addArtifact Build2 Image<-iBuild2 3321.08 900.962 0 0.999998
+addArtifact ExitLight Image<-iExitLight 2737.28 730.104 0 1.0001
+addArtifact Grass0 Image<-iGrass0 235.333 453.66 0 1
+addArtifact CrownBack Image<-iCrownBack -191.2 -25.147 0 1.0001
+addArtifact CrownFront Image<-iCrownFront -170.833 -46.9149 0 1
+addArtifact Grass1 Image<-iGrass1 1616.67 711.596 0 1
+addArtifact Branch Image<-iBranch 1415.83 702.979 0 1
+addSpawnPoint 136 280
+addSpawnPoint 2640 852
+addEdgeBox 704.533 464 1 1
+addEdgeBox 1171.06 716 1 0
+addEdgeBox 2017.15 716 1 1
+addEdgeBox 2456.23 1002 0 0
+addActionBox BuildingEntrance 2757 758 3016 1007
+
+@Script
+addBoolean ExitLightOn 1
+addFloat ExitLightTimer 0
+onStart Artifact<-ExitLight<-Alpha = 0
+# onStart Solid<-Build0<-xMomentum = 250
+# everyFrame Artifact<-ExitLight<-Alpha = 0 if ABCollision Player<-Mask ActionBox<-BuildingEntrance : Artifact<-ExitLight<-Alpha = 255
+everyFrame if ABCollision Player<-Position ActionBox<-BuildingEntrance : GotoLevel IntroLevel2 0 0
+everyFrame Function<-UpdateExitLight
+
+addFunction UpdateExitLight
+
+	Float<-ExitLightTimer += FrameTime
+	if Float<-ExitLightTimer > 1 : Function<-BlinkExitLight Float<-ExitLightTimer = 0
+
+endFunction
+
+addFunction BlinkExitLight
+
+	Boolean<-ExitLightOn = !Boolean<-ExitLightOn
+	Artifact<-ExitLight<-Alpha = 0
+	if Boolean<-ExitLightOn : Artifact<-ExitLight<-Alpha = 255
+	# Output Boolean<-ExitLightOn
+
+endFunction

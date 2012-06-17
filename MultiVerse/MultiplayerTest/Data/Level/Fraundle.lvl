@@ -1,0 +1,7 @@
+@LevelObjects
+setBgColor 0 0 0
+setGravity 0.0982
+addImage iUniversity Data/Image/universityHouse.png
+addArtifact University Image<-iUniversity 238 210 0 2
+
+@Script

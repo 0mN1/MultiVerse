@@ -1,0 +1,6 @@
+@LevelObjects
+setBgColor 0 0 0
+setGravity 0.0982
+addActionBox 1 595 422 778 676
+
+@Script

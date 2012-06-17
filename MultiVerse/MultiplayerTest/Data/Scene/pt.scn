@@ -1,0 +1,10 @@
+Name pt
+Lvl 
+Type S
+Dur 30
+Fcop 1
+Lpii 1
+PChar PLAYER 0 KingOfLimbs
+	Pos 640 660 0
+	Dir 0 0
+endChar

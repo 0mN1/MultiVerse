@@ -1,0 +1,43 @@
+@LevelObjects
+setBgColor 255 255 255
+setVignetteColor 255 255 255
+setGravity 9.82
+addImage iGmask0 Data\Image\CityPt2\Gmask00.png
+addImage iGmask1 Data\Image\CityPt2\Gmask01.png
+addImage iGrass0 Data\Image\CityPt2\Grass00.png
+addImage iGrass1 Data\Image\CityPt2\Grass01.png
+addImage iPar0 Data\Image\CityPt2\Par00.png
+addImage iPar1 Data\Image\CityPt2\Par01.png
+addImage iPar2 Data\Image\CityPt2\Par10.png
+addImage iPar3 Data\Image\CityPt2\Par11.png
+addImage iGrowth0 Data\Image\CityPt2\growth00.png
+addImage iGrowth1 Data\Image\CityPt2\growth01.png
+addImage iGrowth2 Data\Image\CityPt2\growth02.png
+addImage iGrowth3 Data/Image/CityPt2/growth03.png
+addImage iGrowth4 Data/Image/CityPt2/growth04.png
+addImage iSun Data/Image/Sun.png
+addImage iSun2 Data/Image/IntroLevel/Sun.png
+addImage iTree0 Data/Image/CityPt2/Tree00.png
+addImage iTree1 Data/Image/CityPt2/Tree01.png
+addSolid Gmask0 Image<-iGmask0 -1787.41 438.805
+addSolid Gmask1 Image<-iGmask1 1331.22 438.805
+addArtifact Grass0 Image<-iGrass0 -1931.93 603.27 0 0.999
+addArtifact Grass1 Image<-iGrass1 1297.06 603.971 0 0.999
+addArtifact Growth0 Image<-iGrowth0 -1803.37 249.972 0 1
+addArtifact Growth1 Image<-iGrowth1 -838.43 386.873 0 1
+addArtifact Growth2 Image<-iGrowth2 -2219.5 415.549 4.76887 1
+addArtifact Par0 Image<-iPar0 -896.7 319.935 0 3
+addArtifact Par1 Image<-iPar1 2103.15 322.219 0 3
+addArtifact Par2 Image<-iPar2 -1713.88 179.594 0 7
+addArtifact Par3 Image<-iPar3 1276.61 179.594 0 7
+addArtifact Growth3 Image<-iGrowth3 968.703 339.303 353.505 1
+addArtifact Growth4 Image<-iGrowth4 2104.09 390.567 5.5773 1
+addArtifact Sun Image<-iSun 3644.84 -2668.17 0 100
+addArtifact Sun2 Image<-iSun2 -434.543 -236.952 292.598 100
+addArtifact Sun3 Image<-iSun2 -187.584 -535.589 0 100
+addArtifact Tree0 Image<-iTree0 10.3809 455.315 0 0.95
+addArtifact Tree1 Image<-iTree1 1439.88 225.122 351.648 0.9
+addSpawnPoint -2956.59 408.944
+
+@Script
+
