@@ -10,6 +10,8 @@ int main()
     if(Game.GameOn)
     Game.NetworkOptionsLoop();
 
+    Game.SaveSettings();
+
     if(Game.GameOn)
     {
         if(Game.isServer)

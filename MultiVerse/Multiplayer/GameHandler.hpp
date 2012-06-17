@@ -200,14 +200,17 @@ class NetworkWindow
     NetworkWindow()
     {}
 
-    NetworkWindow(Image & WindowImage, Image NBImages[3])
+    NetworkWindow(Image & WindowImage, Image NBImages[3], string lastName)
     {
         WindowSprite.SetImage(WindowImage);
 
         Position.x = 1280/2 - WindowSprite.GetSize().x/2;
         Position.y = 720/2 - WindowSprite.GetSize().y/2;
 
+        cout << lastName;
+
         NameBox = GUI::TextBox(25, 60, 200, 24);
+        NameBox.SetS1(lastName);
         NameBox.SetActive(true);
         ServerButton = NewButton(NBImages, "Server", Vector2f(70, 125));
         ClientButton = NewButton(NBImages, "Client", Vector2f(180, 125));
@@ -284,7 +287,7 @@ class IPAddressWindow
     IPAddressWindow()
     {}
 
-    IPAddressWindow(Image & WindowImage, Image NBImages[3])
+    IPAddressWindow(Image & WindowImage, Image NBImages[3], string lastServer)
     {
         WindowSprite.SetImage(WindowImage);
 
@@ -294,6 +297,8 @@ class IPAddressWindow
         NameBox = GUI::TextBox(25, 60, 200, 24);
         NameBox.SetActive(true);
         ConnectButton = NewButton(NBImages, "Connect", Vector2f(170, 125));
+
+        NameBox.SetS1(lastServer);
     }
 
     string GetName()
@@ -451,8 +456,14 @@ class GameHandler
 
     bool WriteChat;
 
+    /// Settings
+    Color IdColor;
+    string Server;
+
     GameHandler() : App((GetScreenSize().x<1280 || GetScreenSize().y<720)?800:1280, (GetScreenSize().x<1280 || GetScreenSize().y<720)?600:720, 32, "Multiverse Multiplayer")
     {
+        LoadSettings();
+
         GothicFont.LoadFromFile("Data/Font/CenturyGothic.ttf");
 
         NBImages[0].LoadFromFile("Data/Image/EditorInterface/NewButtonIdle.png");
@@ -463,8 +474,8 @@ class GameHandler
         WindowImages[1].LoadFromFile("Data/Image/EditorInterface/NewWindow02.png");
         WindowImages[2].LoadFromFile("Data/Image/EditorInterface/NewWindow03.png");
 
-        networkWindow = NetworkWindow(WindowImages[0], NBImages);
-        IPWindow = IPAddressWindow(WindowImages[0], NBImages);
+        networkWindow = NetworkWindow(WindowImages[0], NBImages, Name);
+        IPWindow = IPAddressWindow(WindowImages[0], NBImages, Server);
         characterWindow = CharacterWindow(WindowImages[2]);
 
         Ob.AddNode(new Obstacle("Data/Image/Obstacles/Platform01Bumpy.png", Vector2f(-1100.f, 1250.f)));
@@ -478,6 +489,36 @@ class GameHandler
 
         GameOn = true;
         WriteChat = false;
+    }
+
+    void LoadSettings()
+    {
+        ifstream fin;
+        fin.open("MultiplayerSettings");
+
+        if(fin.is_open())
+        {
+            int r,g,b;
+            getline(fin, Name);
+            fin >> r >> g >> b >> Server;
+            IdColor = Color(r, g, b);
+        }
+
+        fin.close();
+        fin.clear();
+    }
+
+    void SaveSettings()
+    {
+        ofstream fout;
+        fout.open("MultiplayerSettings");
+
+        fout << Name << endl
+             << (int)IdColor.r << " " << (int)IdColor.g << " "
+             << (int)IdColor.b << endl
+             << Server << endl;
+
+        fout.close();
     }
 
     void CharacterSelectionLoop()
@@ -634,6 +675,7 @@ class GameHandler
                     if(IPWindow.Update(App))
                     {
                         ClientHandler.ConnectionAddress = IPWindow.GetName();
+                        Server = IPWindow.GetName();
 
                         if(ClientHandler.ConnectionAddress.IsValid())
                         ClientHandler.ConnectToServer();
@@ -768,7 +810,7 @@ class GameHandler
                 if(!chat.Write())
                 {
                     ChatBubbles.AddNode(new ChatBubble(chat.GetString(), chat.GetPosition().x+60.5f,
-                                                       chat.GetPosition().y+16, BubbleImage, Color(200, 155, 255)));
+                                                       chat.GetPosition().y+16, BubbleImage, IdColor));
 
                     ServerHandler.myData.SendMessage(ChatBubbles[ChatBubbles.GetSize()-1]->GetString(),
                                                      ChatBubbles[ChatBubbles.GetSize()-1]->GetPosition(),
@@ -913,7 +955,7 @@ class GameHandler
                 if(!chat.Write())
                 {
                     ChatBubbles.AddNode(new ChatBubble(chat.GetString(), chat.GetPosition().x+60.5f,
-                                                       chat.GetPosition().y+16, BubbleImage, Color(255, 100, 100)));
+                                                       chat.GetPosition().y+16, BubbleImage, IdColor));
 
                     ClientHandler.myData.SendMessage(ChatBubbles[ChatBubbles.GetSize()-1]->GetString(),
                                                      ChatBubbles[ChatBubbles.GetSize()-1]->GetPosition(),
