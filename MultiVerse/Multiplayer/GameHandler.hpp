@@ -449,6 +449,8 @@ class GameHandler
     List< Obstacle > Ob;
     LevelBackground lBg;
 
+    bool WriteChat;
+
     GameHandler() : App((GetScreenSize().x<1280 || GetScreenSize().y<720)?800:1280, (GetScreenSize().x<1280 || GetScreenSize().y<720)?600:720, 32, "Multiverse Multiplayer")
     {
         GothicFont.LoadFromFile("Data/Font/CenturyGothic.ttf");
@@ -475,6 +477,7 @@ class GameHandler
         NetworkTimer = UPDATETIME;
 
         GameOn = true;
+        WriteChat = false;
     }
 
     void CharacterSelectionLoop()
@@ -664,6 +667,12 @@ class GameHandler
         Fps.SetFont(GothicFont);
         Fps.SetSize(32);
 
+        Image BubbleImage;
+        BubbleImage.LoadFromFile("Data/Image/ChatUI/ChatBubble01.png");
+        ChatBox chat(1280/2 - 60, 300, BubbleImage);
+
+        List< ChatBubble > ChatBubbles;
+
         while (App().IsOpened())
         {
             sf::Event Event;
@@ -685,6 +694,11 @@ class GameHandler
 
                     case Key::F5:
                     ShowData = !ShowData;
+                    break;
+
+                    case Key::Tab:
+                    WriteChat = !WriteChat;
+                    chat.SetActive(true);
                     break;
 
                     default:
@@ -724,6 +738,11 @@ class GameHandler
                 ServerHandler.myData.UpdateData(Player);
                 ServerHandler.SendCharacterUpdate();
                 ServerHandler.Data.UpdateCharacter(Friend);
+                if(ServerHandler.Data.newMsg)
+                {
+                    ChatBubbles.AddNode(new ChatBubble(ServerHandler.Data, BubbleImage));
+                    ServerHandler.Data.newMsg = false;
+                }
                 NetworkTimer = UPDATETIME;
             }
 
@@ -735,8 +754,33 @@ class GameHandler
             Friend.Predict(App, Ob);
             Friend.Draw(App);
 
+            if(!WriteChat)
             Player.Update(App, lBg, Ob);
             Player.Draw(App);
+
+            for(int i = 0; i < ChatBubbles.GetSize(); i++)
+            {
+                ChatBubbles[i]->Draw(App);
+            }
+
+            if(WriteChat)
+            {
+                if(!chat.Write())
+                {
+                    ChatBubbles.AddNode(new ChatBubble(chat.GetString(), chat.GetPosition().x+60.5f,
+                                                       chat.GetPosition().y+16, BubbleImage, Color(200, 155, 255)));
+
+                    ServerHandler.myData.SendMessage(ChatBubbles[ChatBubbles.GetSize()-1]->GetString(),
+                                                     ChatBubbles[ChatBubbles.GetSize()-1]->GetPosition(),
+                                                     ChatBubbles[ChatBubbles.GetSize()-1]->GetColor().r,
+                                                     ChatBubbles[ChatBubbles.GetSize()-1]->GetColor().g,
+                                                     ChatBubbles[ChatBubbles.GetSize()-1]->GetColor().b);
+                    chat.SetS1("");
+                    WriteChat = false;
+                }
+
+                chat.Draw(App);
+            }
 
             if(ShowData)
             {
@@ -768,6 +812,12 @@ class GameHandler
         Fps.SetFont(GothicFont);
         Fps.SetSize(32);
 
+        Image BubbleImage;
+        BubbleImage.LoadFromFile("Data/Image/ChatUI/ChatBubble01.png");
+        ChatBox chat(1280/2 - 60, 300, BubbleImage);
+
+        List< ChatBubble > ChatBubbles;
+
         while (App().IsOpened())
         {
             sf::Event Event;
@@ -789,6 +839,11 @@ class GameHandler
 
                     case Key::F5:
                     ShowData = !ShowData;
+                    break;
+
+                    case Key::Tab:
+                    WriteChat = !WriteChat;
+                    chat.SetActive(true);
                     break;
 
                     default:
@@ -828,6 +883,11 @@ class GameHandler
                 ClientHandler.myData.UpdateData(Player);
                 ClientHandler.SendCharacterUpdate();
                 ClientHandler.Data.UpdateCharacter(Friend);
+                if(ClientHandler.Data.newMsg)
+                {
+                    ChatBubbles.AddNode(new ChatBubble(ClientHandler.Data, BubbleImage));
+                    ClientHandler.Data.newMsg = false;
+                }
                 NetworkTimer = UPDATETIME;
             }
 
@@ -839,8 +899,33 @@ class GameHandler
             Friend.Predict(App, Ob);
             Friend.Draw(App);
 
+            if(!WriteChat)
             Player.Update(App, lBg, Ob);
             Player.Draw(App);
+
+            for(int i = 0; i < ChatBubbles.GetSize(); i++)
+            {
+                ChatBubbles[i]->Draw(App);
+            }
+
+            if(WriteChat)
+            {
+                if(!chat.Write())
+                {
+                    ChatBubbles.AddNode(new ChatBubble(chat.GetString(), chat.GetPosition().x+60.5f,
+                                                       chat.GetPosition().y+16, BubbleImage, Color(255, 100, 100)));
+
+                    ClientHandler.myData.SendMessage(ChatBubbles[ChatBubbles.GetSize()-1]->GetString(),
+                                                     ChatBubbles[ChatBubbles.GetSize()-1]->GetPosition(),
+                                                     ChatBubbles[ChatBubbles.GetSize()-1]->GetColor().r,
+                                                     ChatBubbles[ChatBubbles.GetSize()-1]->GetColor().g,
+                                                     ChatBubbles[ChatBubbles.GetSize()-1]->GetColor().b);
+                    chat.SetS1("");
+                    WriteChat = false;
+                }
+
+                chat.Draw(App);
+            }
 
             if(ShowData)
             {

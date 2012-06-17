@@ -432,7 +432,7 @@ class PlayerClass
         }
     }
 
-    friend class CharacterData;
+    friend class SynchronizationData;
 };
 
 #endif
